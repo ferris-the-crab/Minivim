@@ -44,4 +44,30 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim" },
 	opts = { }
     },
+
+    {
+	"shellRaining/hlchunk.nvim",
+	event = { "BufReadPre", "BufNewFile" },
+	config = function()
+	    require("hlchunk").setup({
+		chunk = {
+		    chars = {
+			horizontal_line = "─",
+			vertical_line = "│",
+			left_top = "┌",
+			left_bottom = "└",
+			right_arrow = "─",
+		    },
+
+		    style = "#D79921",
+		    error_sign = false,
+		    enable = true,
+		},
+
+		indent = {
+		    enable = true, 
+		},
+	    })
+	end
+    },
 }
