@@ -11,6 +11,8 @@ Great for people who prefer a clean "IDE" with no visual clutter (like me).
 - Gruvbox theme (default)
 - Fuzzy finder (Space + FF, normal mode)
 - Auto brackets and indentation
+- Hlchunk plugin for extra eye-candy
+- Vim-startuptime for diagnostics and performance view ('StartupTime' command)
 - Fancy lualine :)
   <br><br>
 
