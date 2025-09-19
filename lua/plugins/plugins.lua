@@ -62,6 +62,7 @@ return {
 		    style = "#D79921",
 		    error_sign = false,
 		    enable = true,
+		    use_treesitter = false,
 		},
 
 		indent = {
