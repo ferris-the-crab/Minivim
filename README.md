@@ -28,7 +28,7 @@ Great for people who prefer a clean "IDE" with no visual clutter (like me).
 Clone this repo into your Neovim config directory (usually ~/.config/nvim):
 
 ```bash
-$ git clone https://github.com/ferris-the-crab/Minivim.git ~/.config/nvim
+git clone https://github.com/ferris-the-crab/Minivim.git ~/.config/nvim
 ```
 
 You may also want to install a Nerd Font and Ripgrep for full functionallity.
