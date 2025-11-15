@@ -1,5 +1,7 @@
 # Minivim
 
+<img src="screenshot.png" width="650">
+
 A super simple Neovim configuration with the absolute bare-minimum.
 <br>
 Great for people who prefer a clean "IDE" with no visual clutter (like me).
