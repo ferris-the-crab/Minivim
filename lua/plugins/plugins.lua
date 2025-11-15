@@ -1,24 +1,28 @@
 return {
-    -- colorscheme
+    -- themes
+    { "ellisonleao/gruvbox.nvim" },
+    { "rose-pine/neovim", name = "rose-pine" },
+    { "xero/miasma.nvim" },
     {
-	"ellisonleao/gruvbox.nvim",
+	"zaldih/themery.nvim",
 	lazy = false,
-	priority = 1000,
 	config = function()
-	    vim.cmd([[colorscheme gruvbox]])
-	    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	end,
-    },
-
-    {
-	'nvim-lualine/lualine.nvim',
-	dependencies = { 'nvim-tree/nvim-web-devicons' },
-	opts = { theme = "gruvbox" },
+	    require("themery").setup({
+		themes = {"gruvbox", "rose-pine", "miasma"},
+		livePreciew = true,
+	    })
+	end
     },
 
     {
 	"sphamba/smear-cursor.nvim",
 	opts = {},
+    },
+
+    {
+	'nvim-lualine/lualine.nvim',
+	dependencies = { 'nvim-tree/nvim-web-devicons' },
+	opts = { theme = "" }
     },
 
     {
@@ -79,4 +83,27 @@ return {
 	    vim.g.startuptime_tries = 10
 	end,
     },
+
+    {
+	"folke/which-key.nvim",
+	event = "VeryLazy",
+    },
+
+    {
+	"neovim/nvim-lspconfig",
+	lazy = false
+    },
+
+    {
+	"hrsh7th/nvim-cmp",
+	dependencies = {
+	    "hrsh7th/cmp-nvim-lsp",
+	    "hrsh7th/cmp-buffer",
+	    "hrsh7th/cmp-path",
+	    "hrsh7th/cmp-cmdline",
+	    "L3MON4D3/LuaSnip",
+	    "saadparwaiz1/cmp_luasnip",
+	    "rafamadriz/friendly-snippets",
+	},
+    }
 }
