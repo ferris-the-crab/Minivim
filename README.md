@@ -10,7 +10,7 @@ Great for people who prefer a clean "IDE" with no visual clutter (like me).
 
 [included]
 
-- 3 themes (change with Space + TT, normal mode)
+- 4 themes (change with Space + TT, normal mode)
 - Fuzzy finder (Space + FF, normal mode)
 - Auto brackets and indentation
 - Hlchunk plugin for extra eye-candy
@@ -21,7 +21,7 @@ Great for people who prefer a clean "IDE" with no visual clutter (like me).
 
 [NOT included]
 
-- File explorer
+- Fancy file explorer
 - Buffer line
 
 ## Installation

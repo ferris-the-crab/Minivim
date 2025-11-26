@@ -3,12 +3,13 @@ return {
     { "ellisonleao/gruvbox.nvim" },
     { "rose-pine/neovim", name = "rose-pine" },
     { "xero/miasma.nvim" },
+    { "olimorris/onedarkpro.nvim" },
     {
 	"zaldih/themery.nvim",
 	lazy = false,
 	config = function()
 	    require("themery").setup({
-		themes = {"gruvbox", "rose-pine", "miasma"},
+		themes = {"gruvbox", "rose-pine", "miasma", "onedark"},
 		livePreciew = true,
 	    })
 	end
@@ -54,23 +55,14 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 	    require("hlchunk").setup({
-		chunk = {
-		    chars = {
-			horizontal_line = "─",
-			vertical_line = "│",
-			left_top = "┌",
-			left_bottom = "└",
-			right_arrow = "─",
-		    },
-
-		    style = "#D79921",
-		    error_sign = false,
-		    enable = true,
-		    use_treesitter = false,
-		},
-
 		indent = {
-		    enable = true, 
+		    enable = true,
+		    chars = {
+			"│",
+			"¦",
+			"┆",
+			"┊",
+		    },
 		},
 	    })
 	end
