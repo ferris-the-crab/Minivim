@@ -4,16 +4,6 @@ return {
     { "rose-pine/neovim", name = "rose-pine" },
     { "xero/miasma.nvim" },
     { "olimorris/onedarkpro.nvim" },
-    {
-	"zaldih/themery.nvim",
-	lazy = false,
-	config = function()
-	    require("themery").setup({
-		themes = {"gruvbox", "rose-pine", "miasma", "onedark"},
-		livePreciew = true,
-	    })
-	end
-    },
 
     {
 	"sphamba/smear-cursor.nvim",
@@ -69,14 +59,6 @@ return {
     },
 
     {
-	"dstein64/vim-startuptime",
-	cmd = "StartupTime",
-	init = function()
-	    vim.g.startuptime_tries = 10
-	end,
-    },
-
-    {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
     },
@@ -92,8 +74,11 @@ return {
 	    "hrsh7th/cmp-nvim-lsp",
 	    "hrsh7th/cmp-buffer",
 	    "hrsh7th/cmp-path",
-	    "L3MON4D3/LuaSnip",
-	    "saadparwaiz1/cmp_luasnip",
 	},
-    }
+    },
+
+    {
+	"j-hui/fidget.nvim",
+	opts = {},
+    },
 }

@@ -1,3 +1,2 @@
-require("config.lazy")
-require("config.settings")
+require("config.config_loader")
 require("config.lsp")
