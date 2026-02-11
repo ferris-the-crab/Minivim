@@ -1,13 +1,12 @@
+require("config.config")
+
 vim.diagnostic.config({
     update_in_insert = true,
     underline = true,
     virtual_text = true,
 })
 
-vim.lsp.enable({
-    "rust_analyzer",
-    "lua_ls",
-})
+vim.lsp.enable(enabled_lsps)
 
 local cmp = require("cmp")
 cmp.setup({

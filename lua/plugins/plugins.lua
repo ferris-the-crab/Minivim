@@ -1,9 +1,9 @@
 return {
     -- themes
-    { "ellisonleao/gruvbox.nvim" },
-    { "rose-pine/neovim", name = "rose-pine" },
-    { "xero/miasma.nvim" },
-    { "olimorris/onedarkpro.nvim" },
+    { "ellisonleao/gruvbox.nvim", lazy = true },
+    { "rose-pine/neovim", name = "rose-pine", lazy = true },
+    { "xero/miasma.nvim", lazy = true },
+    { "olimorris/onedarkpro.nvim", lazy = true },
 
     {
 	"sphamba/smear-cursor.nvim",
@@ -20,6 +20,7 @@ return {
 	'windwp/nvim-autopairs',
 	event = "InsertEnter",
 	config = true,
+	lazy = false,
     },
 
     {
