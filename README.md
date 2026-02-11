@@ -40,6 +40,6 @@ You may also want to install a Nerd Font and Ripgrep for full functionallity.
 
 ## Configuration
 
-Simple configuration can be done through the file ```~/.config/nvim/lua/config/config.lua```.
+Simple configuration can be done through the file ~/.config/nvim/lua/config/config.lua.
 For language servers, simply add them to the list of language servers in your config.lua and make sure you have the LSP installed.
 LSP naming can be a little different, such as "lua_ls" instead of "lua-language-server".
